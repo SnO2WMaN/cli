@@ -1,0 +1,23 @@
+{
+	"name": "sno2wman",
+	"version": "2.0.0",
+	"description": "About @SnO2WMaN",
+	"main": "index.js",
+	"author": "SnO2WMaN <sno2wman.official@gmail.com> (https://sno2wman.graphics/)",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SnO2WMaN/SnO2WMaN.git"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^7.3.2",
+		"@commitlint/config-conventional": "^7.3.1",
+		"@commitlint/travis-cli": "^7.3.2",
+		"husky": "^1.3.1"
+	}
+}
