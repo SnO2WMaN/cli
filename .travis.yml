@@ -2,5 +2,12 @@ language: node_js
 node_js:
     - '10'
     - '8'
+cache:
+    yarn: true
+    directories:
+        - 'node_modules'
+install:
+    - yarn install --ignore-engines
 script:
     - commitlint-travis
+    - npm test
