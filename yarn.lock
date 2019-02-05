@@ -909,6 +909,13 @@ acorn@^6.0.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.0.5.tgz#81730c0815f3f3b34d8efa95cb7430965f4d887a"
   integrity sha512-i33Zgp3XWtmZBMNvCr4azvOFeWVw1Rk6p3hfi3LUDvIFraOMywb1kAtrbi+med14m4Xfpqm3zRZMT+c0FNE7kg==
 
+ager@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/ager/-/ager-2.0.5.tgz#91dc0ae0a31cff80c4ff5756307c90fe0ac1f5a3"
+  integrity sha1-kdwK4KMc/4DE/1dWMHyQ/grB9aM=
+  dependencies:
+    component-type "^1.2.1"
+
 ajv@^6.5.3, ajv@^6.5.5, ajv@^6.6.1:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.7.0.tgz#e3ce7bb372d6577bb1839f1dfdfcbf5ad2948d96"
@@ -1785,6 +1792,11 @@ component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
   integrity sha1-E3kY1teCg/ffemt8WmPhQOaUJeY=
+
+component-type@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/component-type/-/component-type-1.2.1.tgz#8a47901700238e4fc32269771230226f24b415a9"
+  integrity sha1-ikeQFwAjjk/DIml3EjAibyS0Fak=
 
 concat-map@0.0.1:
   version "0.0.1"
