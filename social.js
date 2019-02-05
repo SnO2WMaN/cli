@@ -9,7 +9,7 @@ module.exports = {
 	discord: 'SnO2WMaN#9459',
 	soundcloud: 'https://soundcloud.com/sno2wman',
 	patreon: 'https://www.patreon.com/SnO2WMaN',
-	mail: 'sno2wman.official@gmail.com',
+	email: 'sno2wman.official@gmail.com',
 	website: 'https://sno2wman.graphics',
 	annict: 'https://annict.jp/@SnO2WMaN'
 }
