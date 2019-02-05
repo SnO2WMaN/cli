@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	twitter: 'https://twitter.com/SnO2WMaN',
 	github: 'https://open.spotify.com/user/sno2wman',
 	qiita: 'https://qiita.com/SnO2WMaN',

@@ -1,8 +1,8 @@
 import gravatar from 'gravatar'
 
-const socials = require('./social.js')
+import socials from './social'
 
-module.exports = {
+export default {
 	name: 'SnO2WMaN',
 	icon(option = { s: 512 }) {
 		return gravatar.url(socials.email, option)
