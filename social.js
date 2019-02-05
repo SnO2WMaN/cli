@@ -10,5 +10,6 @@ module.exports = {
 	soundcloud: 'https://soundcloud.com/sno2wman',
 	patreon: 'https://www.patreon.com/SnO2WMaN',
 	mail: 'sno2wman.official@gmail.com',
-	website: 'https://sno2wman.graphics'
+	website: 'https://sno2wman.graphics',
+	annict: 'https://annict.jp/@SnO2WMaN'
 }
