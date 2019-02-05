@@ -1,6 +1,7 @@
 export default {
 	twitter: 'https://twitter.com/SnO2WMaN',
-	github: 'https://open.spotify.com/user/sno2wman',
+	github: 'https://github.com/SnO2WMaN',
+	spotify: 'https://open.spotify.com/user/sno2wman',
 	qiita: 'https://qiita.com/SnO2WMaN',
 	amazon:
 		'https://www.amazon.co.jp/gp/profile/amzn1.account.AGNQ2CQRCY4BH6NT5KPADJFX4KKA',
