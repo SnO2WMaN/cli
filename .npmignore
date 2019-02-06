@@ -1,0 +1,9 @@
+.prettierrc
+.eslintrc
+.editorconfig
+.commitlintrc
+.all-contributorsrc
+
+.travis.yml
+
+yarn.lock
