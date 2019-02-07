@@ -1,8 +1,6 @@
 const consola = require('consola')
 const getPort = require('get-port')
 
-const N = require('nuxt')
-
 jest.setTimeout(60 * 1000)
 
 const setupNuxt = ({ Nuxt, Builder }) => async config => {
