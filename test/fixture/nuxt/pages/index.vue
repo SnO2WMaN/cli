@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import sno2wman from '~~/index.js'
+import sno2wman from '~~/src/index.js'
 
 export default {
 	data() {
