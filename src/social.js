@@ -12,5 +12,6 @@ export default {
 	patreon: 'https://www.patreon.com/SnO2WMaN',
 	email: 'sno2wman.official@gmail.com',
 	website: 'https://sno2wman.graphics',
-	annict: 'https://annict.jp/@SnO2WMaN'
+	annict: 'https://annict.jp/@SnO2WMaN',
+	hatena: 'http://profile.hatena.ne.jp/SnO2WMaN'
 }
