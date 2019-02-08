@@ -1,0 +1,15 @@
+{
+	"extends": [
+		"config:base",
+		"group:allNonMajor",
+		":preserveSemverRanges",
+		"packages:eslint",
+		":automergeMinor",
+		":automergePatch",
+		":automergeBranchMergeCommit",
+		":semanticCommitTypeAll(chore)"
+	],
+	"npm": {
+		"commitMessageTopic": "{{prettyDepType}} {{depName}}"
+	}
+}
