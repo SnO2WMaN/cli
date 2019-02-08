@@ -5,8 +5,7 @@
 		":preserveSemverRanges",
 		"packages:eslint",
 		":automergeMinor",
-		":automergePatch",
-		":automergeBranchMergeCommit",
+		":automergeBranchPush",
 		":semanticCommitTypeAll(chore)"
 	],
 	"npm": {
