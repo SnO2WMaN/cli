@@ -37,10 +37,14 @@
 		"test": "yarn run lint && cross-env NODE_ENV=test jest"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/plugin-transform-modules-commonjs": "^7.2.0",
 		"@commitlint/cli": "^7.3.2",
 		"@commitlint/config-conventional": "^7.3.1",
 		"@commitlint/travis-cli": "^7.3.2",
+		"add": "^2.0.6",
 		"all-contributors-cli": "^5.11.0",
+		"babel-jest": "^24.1.0",
 		"consola": "^2.4.0",
 		"cross-env": "^5.2.0",
 		"eslint": "^5.12.1",
@@ -53,7 +57,8 @@
 		"nuxt": "^2.4.3",
 		"nuxt-edge": "^2.5.0-25823528.76736f8a",
 		"parcel-bundler": "^1.11.0",
-		"prettier": "^1.16.2"
+		"prettier": "^1.16.2",
+		"yarn": "^1.13.0"
 	},
 	"dependencies": {
 		"ager": "^2.0.5",
