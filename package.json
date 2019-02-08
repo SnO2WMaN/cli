@@ -34,7 +34,9 @@
 	},
 	"scripts": {
 		"lint": "cross-env NODE_ENV=production eslint *.js",
-		"test": "yarn run lint && cross-env NODE_ENV=test jest"
+		"test": "yarn run lint && cross-env NODE_ENV=test jest",
+		"minor": "npm version minor && git tag",
+		"patch": "npm version patch && git tag"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
