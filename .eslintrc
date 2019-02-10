@@ -1,4 +1,0 @@
-{
-	"plugins": ["jest"],
-	"extends": ["cold", "plugin:jest/recommended"]
-}
