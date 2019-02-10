@@ -1,4 +1,4 @@
 {
-	"plugins": ["jest"],
-	"extends": ["cold", "plugin:jest/recommended"]
+	"plugins": ["ava"],
+	"extends": ["cold", "plugin:ava/recommended"]
 }
