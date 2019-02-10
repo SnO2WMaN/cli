@@ -37,7 +37,7 @@
 		"build": "run-s build:*",
 		"build:clean": "rimraf dist",
 		"build:babel": "cross-env NODE_ENV=build babel src --out-dir dist",
-		"test": "ava",
+		"test": "npm run build && ava",
 		"minor": "npm version minor && git tag",
 		"patch": "npm version patch && git tag"
 	},
