@@ -1,47 +1,14 @@
+/* @flow */
 import gravatar from 'gravatar'
 import ager from 'ager'
 
-/**
- * Name
- * @type {String}
- */
-export const name = 'SnO2WMaN'
-
-/**
- * Birthday
- * @type {Date}
- */
-export const birthday = new Date(2001, 5, 22)
-
-/**
- * Age
- * @type {Number}
- */
-export const age = ager(birthday)
-
-/**
- * Sex
- * @type {1|2|9}
- */
-export const sex = 1
-
-/**
- * Religion
- * @type {String}
- */
-export const religion = 'Pastafarianism'
-
-/**
- * Location
- * @type {String}
- */
-export const location = 'Japan, Nagoya'
-
-/**
- * Socials List
- * @typedef Socials
- */
-export const socials = {
+export const name: string = 'SnO2WMaN'
+export const birthday: Date = new Date(2001, 5, 22)
+export const age: number = ager(birthday)
+export const sex: number = 1
+export const religion: string = 'Pastafarianism'
+export const location: string = 'Japan, Nagoya'
+export const socials: { [key: string]: string } = {
 	twitter: 'https://twitter.com/SnO2WMaN',
 	github: 'https://github.com/SnO2WMaN',
 	spotify: 'https://open.spotify.com/user/sno2wman',
@@ -58,22 +25,9 @@ export const socials = {
 	annict: 'https://annict.jp/@SnO2WMaN',
 	hatena: 'https://profile.hatena.ne.jp/SnO2WMaN/'
 }
-
-/**
- * Icon Url
- *
- * @param {gravatar.Options} option
- * @return {string} Icon url
- */
-export function icon(option = {}) {
+export function icon(option: gravatar.Options = {}): string {
 	return gravatar.url(socials.email, option)
 }
-
-/**
- * SnO2WMaN detail
- *
- * @typedef sno2wman
- */
 export default {
 	name,
 	icon,
