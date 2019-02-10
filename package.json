@@ -64,8 +64,6 @@
 	},
 	"dependencies": {
 		"ager": "^2.0.5",
-		"gravatar": "^1.8.0",
-		"md5": "^2.2.1",
-		"query-string": "^6.2.0"
+		"gravatar": "^1.8.0"
 	}
 }
