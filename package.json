@@ -34,7 +34,7 @@
 	},
 	"scripts": {
 		"lint": "eslint **/*.js --ignore-path .gitignore",
-		"test": "yarn run lint && ava",
+		"test": "ava",
 		"minor": "npm version minor && git tag",
 		"patch": "npm version patch && git tag"
 	},
