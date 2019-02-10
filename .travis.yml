@@ -10,4 +10,5 @@ install:
     - yarn install --ignore-engines
 script:
     - commitlint-travis
-    - npm test
+    - yarn build
+    - yarn test

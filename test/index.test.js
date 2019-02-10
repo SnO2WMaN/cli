@@ -1,13 +1,13 @@
 import test from 'ava'
 import isObject from 'isobject'
 import axios from 'axios'
-import { resolve } from 'path'
 
-const rootDir = resolve(__dirname, '..')
-const sno2wman = require(resolve(rootDir, './dist/index.js'))
+import sno2wman from '../dist/index'
 
 test('name', t => t.is(sno2wman.name, 'SnO2WMaN'))
-test('sex', t => t.is(sno2wman.sex, 1))
+
+test('sex', t => t.true([1, 2, 9].includes(sno2wman.sex)))
+
 test('icon', async t => {
 	await axios
 		.get(sno2wman.icon({ protocol: 'https' }))
@@ -18,6 +18,7 @@ test('icon', async t => {
 			t.fail(`HTTP Status: ${status} ${statusText}`)
 		})
 })
+
 test('socials', t => t.true(isObject(sno2wman.socials)))
 Object.entries(sno2wman.socials)
 	.filter(entry => !['discord', 'email'].includes(entry[0]))

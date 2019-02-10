@@ -1,4 +1,4 @@
 module.exports = {
-	plugins: ['ava'],
-	extends: ['cold', 'plugin:ava/recommended']
+	plugins: ['ava', 'jsdoc'],
+	extends: ['cold', 'plugin:ava/recommended', 'plugin:jsdoc/recommended']
 }

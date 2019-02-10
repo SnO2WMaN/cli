@@ -63,7 +63,7 @@ export const socials = {
  * Icon Url
  *
  * @param {gravatar.Options} option
- * @return {String} Icon url
+ * @return {string} Icon url
  */
 export function icon(option = {}) {
 	return gravatar.url(socials.email, option)
