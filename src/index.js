@@ -25,7 +25,7 @@ export const socials: { [key: string]: string } = {
 	annict: 'https://annict.jp/@SnO2WMaN',
 	hatena: 'https://profile.hatena.ne.jp/SnO2WMaN/'
 }
-export function icon(option: gravatar.Options = {}): string {
+export const icon: (option: gravatar.Options) => string = (option = {}) => {
 	return gravatar.url(socials.email, option)
 }
 export default {

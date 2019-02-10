@@ -8,6 +8,9 @@ cache:
         - 'node_modules'
 install:
     - yarn install --ignore-engines
+    - yarn global add flow-typed
+before_script:
+    - flow-typed install
 script:
     - commitlint-travis
     - yarn build

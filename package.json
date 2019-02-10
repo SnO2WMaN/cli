@@ -37,8 +37,8 @@
 		"flow": "flow",
 		"build": "run-s build:*",
 		"build:clean": "rimraf dist",
-		"build:babel": "cross-env NODE_ENV=build babel src/index.js --out-dir dist",
-		"test": "ava",
+		"build:babel": "cross-env NODE_ENV=build babel src --out-dir dist",
+		"test": "flow && ava",
 		"minor": "npm version minor && git tag",
 		"patch": "npm version patch && git tag",
 		"prepublish": "npm run build"
