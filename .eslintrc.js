@@ -1,4 +1,9 @@
 module.exports = {
-	plugins: ['ava', 'jsdoc'],
-	extends: ['cold', 'plugin:ava/recommended', 'plugin:jsdoc/recommended']
+	parser: 'babel-eslint',
+	plugins: ['ava', 'flowtype'],
+	extends: [
+		'eslint:recommended',
+		'plugin:ava/recommended',
+		'plugin:flowtype/recommended'
+	]
 }
