@@ -39,7 +39,8 @@
 		"build:babel": "cross-env NODE_ENV=build babel src --out-dir dist",
 		"test": "npm run build && ava",
 		"minor": "npm version minor && git tag",
-		"patch": "npm version patch && git tag"
+		"patch": "npm version patch && git tag",
+		"release": "npm run build && npm publish"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.2.3",
