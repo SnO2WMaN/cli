@@ -6,7 +6,9 @@
 		"packages:eslint",
 		":automergeMinor",
 		":automergeBranchMergeCommit",
-		":semanticCommitTypeAll(chore)"
+		":semanticCommitTypeAll(chore)",
+		":timezone(Asia/Tokyo)",
+		"schedule:earlyMondays"
 	],
 	"npm": {
 		"commitMessageTopic": "{{prettyDepType}} {{depName}}"
