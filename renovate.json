@@ -1,16 +1,3 @@
 {
-	"extends": [
-		"config:base",
-		"group:allNonMajor",
-		":preserveSemverRanges",
-		"packages:eslint",
-		":automergeMinor",
-		":automergeBranchMergeCommit",
-		":semanticCommitTypeAll(chore)",
-		":timezone(Asia/Tokyo)",
-		"schedule:earlyMondays"
-	],
-	"npm": {
-		"commitMessageTopic": "{{prettyDepType}} {{depName}}"
-	}
+	"extends": ["@teppeis"]
 }
