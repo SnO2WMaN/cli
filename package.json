@@ -2,7 +2,6 @@
 	"name": "sno2wman",
 	"version": "2.4.4",
 	"description": "About @SnO2WMaN",
-	"main": "dist/index.js",
 	"author": "SnO2WMaN <sno2wman.official@gmail.com> (https://sno2wman.graphics/)",
 	"license": "MIT",
 	"repository": {
@@ -16,9 +15,6 @@
 		"node": ">=8.0.0",
 		"npm": ">=5.0.0"
 	},
-	"files": [
-		"dist"
-	],
 	"@pika/pack": {
 		"pipeline": [
 			[
@@ -57,10 +53,7 @@
 		"lint": "eslint **/*.js --ignore-path .gitignore",
 		"build": "pack build",
 		"pretest": "npm run build",
-		"test": "ava",
-		"minor": "npm version minor && git tag",
-		"patch": "npm version patch && git tag",
-		"prepublish": "npm run build"
+		"test": "ava"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
