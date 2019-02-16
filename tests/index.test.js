@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import sno2wman from '../pkg'
 
-test('icon', async t => {
+test('check icon', async t => {
 	await axios
 		.get(sno2wman.icon({ protocol: 'https' }))
 		.then(() => {
@@ -14,12 +14,13 @@ test('icon', async t => {
 		})
 })
 
+// socials
 Object.entries(sno2wman.socials)
 	.filter(entry => !['discord', 'email'].includes(entry[0]))
 	.forEach(entry => {
 		const key = entry[0],
 			link = entry[1]
-		test(`socials / ${key}`, async t => {
+		test(`check ${key} link`, async t => {
 			await axios
 				.get(link)
 				.then(() => {
@@ -30,3 +31,19 @@ Object.entries(sno2wman.socials)
 				})
 		})
 	})
+
+// wishlist
+Object.entries(sno2wman.wishlist).forEach(entry => {
+	const key = entry[0],
+		link = entry[1]
+	test(`check ${key} wishlist link`, async t => {
+		await axios
+			.get(link)
+			.then(() => {
+				t.pass()
+			})
+			.catch(({ status, statusText }) => {
+				t.fail(`HTTP Status: ${status} ${statusText}`)
+			})
+	})
+})

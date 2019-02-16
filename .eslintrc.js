@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ['cold:oss']
+	extends: ['cold/oss']
 }
