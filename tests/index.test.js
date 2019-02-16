@@ -1,12 +1,7 @@
 import test from 'ava'
-import isObject from 'isobject'
 import axios from 'axios'
 
-import sno2wman from '../dist/index'
-
-test('name', t => t.is(sno2wman.name, 'SnO2WMaN'))
-
-test('sex', t => t.true([1, 2, 9].includes(sno2wman.sex)))
+import sno2wman from '../pkg'
 
 test('icon', async t => {
 	await axios
@@ -19,7 +14,6 @@ test('icon', async t => {
 		})
 })
 
-test('socials', t => t.true(isObject(sno2wman.socials)))
 Object.entries(sno2wman.socials)
 	.filter(entry => !['discord', 'email'].includes(entry[0]))
 	.forEach(entry => {

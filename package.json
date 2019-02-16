@@ -19,6 +19,27 @@
 	"files": [
 		"dist"
 	],
+	"@pika/pack": {
+		"pipeline": [
+			[
+				"@pika/plugin-standard-pkg",
+				{
+					"exclude": [
+						"__tests__/*"
+					]
+				}
+			],
+			[
+				"@pika/plugin-build-node"
+			],
+			[
+				"@pika/plugin-build-web"
+			],
+			[
+				"@pika/plugin-build-types"
+			]
+		]
+	},
 	"lint-staged": {
 		"*.js": [
 			"eslint",
@@ -34,11 +55,8 @@
 	},
 	"scripts": {
 		"lint": "eslint **/*.js --ignore-path .gitignore",
-		"flow": "flow",
-		"build": "run-s build:*",
-		"build:clean": "rimraf dist",
-		"build:babel": "cross-env NODE_ENV=build babel src --out-dir dist",
-		"test": "flow && ava",
+		"build": "pack build",
+		"test": "ava",
 		"minor": "npm version minor && git tag",
 		"patch": "npm version patch && git tag",
 		"prepublish": "npm run build"
@@ -60,15 +78,18 @@
 		"eslint-plugin-ava": "^5.1.1",
 		"eslint-plugin-flowtype": "^3.4.1",
 		"eslint-plugin-jsdoc": "^4.1.0",
-		"flow-bin": "^0.92.1",
 		"husky": "^1.3.1",
 		"isobject": "^3.0.1",
 		"lint-staged": "^8.1.4",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^1.16.4",
-		"rimraf": "^2.6.3"
+		"prettier": "^1.16.4"
 	},
 	"dependencies": {
+		"@pika/pack": "^0.3.2",
+		"@pika/plugin-build-node": "^0.3.11",
+		"@pika/plugin-build-types": "^0.3.11",
+		"@pika/plugin-build-web": "^0.3.11",
+		"@pika/plugin-standard-pkg": "^0.3.11",
 		"ager": "^2.0.5",
 		"gravatar": "^1.8.0"
 	}
