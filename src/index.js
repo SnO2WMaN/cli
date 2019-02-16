@@ -2,13 +2,13 @@
 import gravatar from 'gravatar'
 import ager from 'ager'
 
-export const name: string = 'SnO2WMaN'
-export const birthday: Date = new Date(2001, 5, 22)
-export const age: number = ager(birthday)
-export const sex: number = 1
-export const religion: string = 'Pastafarianism'
-export const location: string = 'Japan, Nagoya'
-export const socials: { [key: string]: string } = {
+export const name = 'SnO2WMaN'
+export const birthday = new Date(2001, 5, 22)
+export const age = ager(birthday)
+export const sex = 1
+export const religion = 'Pastafarianism'
+export const location = 'Japan, Nagoya'
+export const socials = {
 	twitter: 'https://twitter.com/SnO2WMaN',
 	github: 'https://github.com/SnO2WMaN',
 	spotify: 'https://open.spotify.com/user/sno2wman',
@@ -25,7 +25,7 @@ export const socials: { [key: string]: string } = {
 	annict: 'https://annict.jp/@SnO2WMaN',
 	hatena: 'https://profile.hatena.ne.jp/SnO2WMaN/'
 }
-export const icon: (option: gravatar.Options) => string = (option = {}) => {
+export const icon = (option = {}) => {
 	return gravatar.url(socials.email, option)
 }
 export default {
