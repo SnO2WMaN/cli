@@ -1,8 +1,5 @@
 node_modules
 .cache
 *.log
-.nuxt
 coverage
-dist
-flow-typed
 pkg
