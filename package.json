@@ -56,7 +56,7 @@
 		"test": "ava"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.2.2",
+		"@babel/core": "^7.3.3",
 		"@babel/preset-env": "^7.3.1",
 		"@commitlint/cli": "^7.5.1",
 		"@commitlint/config-conventional": "^7.5.0",
