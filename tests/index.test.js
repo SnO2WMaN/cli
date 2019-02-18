@@ -1,7 +1,9 @@
+import { resolve } from 'path'
+
 import test from 'ava'
 import axios from 'axios'
 
-import sno2wman from '../pkg'
+const sno2wman = require(resolve(__dirname, '../pkg')).default // eslint-disable-line import/no-dynamic-require
 
 test('check icon', async t => {
 	await axios
@@ -18,8 +20,8 @@ test('check icon', async t => {
 Object.entries(sno2wman.socials)
 	.filter(entry => !['discord', 'email'].includes(entry[0]))
 	.forEach(entry => {
-		const key = entry[0],
-			link = entry[1]
+		const key = entry[0]
+		const link = entry[1]
 		test(`check ${key} link`, async t => {
 			await axios
 				.get(link)
@@ -34,8 +36,8 @@ Object.entries(sno2wman.socials)
 
 // wishlist
 Object.entries(sno2wman.wishlist).forEach(entry => {
-	const key = entry[0],
-		link = entry[1]
+	const key = entry[0]
+	const link = entry[1]
 	test(`check ${key} wishlist link`, async t => {
 		await axios
 			.get(link)
