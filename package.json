@@ -50,7 +50,8 @@
 		}
 	},
 	"scripts": {
-		"lint": "eslint **/*.js --ignore-path .gitignore",
+		"lint": "lint:eslint",
+		"lint:eslint": "eslint **/*.js --ignore-path .gitignore",
 		"test": "ava",
 		"build": "pack build"
 	},

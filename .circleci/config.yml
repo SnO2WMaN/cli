@@ -1,12 +1,12 @@
 version: 2
 
 defaults: &defaults
-    working_directory: ~/workspace
+    working_directory: ~/repo
     docker:
         - image: circleci/node:8.11.4
 
 jobs:
-    build:
+    install:
         <<: *defaults
         steps:
             - checkout
@@ -14,18 +14,36 @@ jobs:
                   key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
             - run:
                   name: Install dependencies
-                  command: yarn
-            - run:
-                  name: Build
-                  command: yarn build
+                  command: yarn install
             - save_cache:
                   key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
                   paths:
-                      - ~/workspace/node_modules
+                      - ~/repo/node_modules
             - persist_to_workspace:
                   root: .
                   paths:
                       - .
+    build:
+        <<: *defaults
+        steps:
+            - attach_workspace:
+                  at: .
+            - run:
+                  name: Build
+                  command: yarn build
+    lint:
+        <<: *defaults
+        steps:
+            - attach_workspace:
+                  at: .
+            - run:
+                  name: 'Commitlint'
+                  command: |
+                      git log --format=%B -n 1 $CIRCLE_SHA1 > $HOME/message.txt
+                      yarn commitlint -e $HOME/message.txt
+            - run:
+                  name: 'ESLint'
+                  command: yarn run lint:eslint
     test:
         <<: *defaults
         steps:
@@ -45,11 +63,24 @@ jobs:
             - run:
                   name: Publish package
                   command: npm publish pkg
+
 workflows:
     version: 2
     build_and_test:
         jobs:
+            - install:
+                  filters:
+                      tags:
+                          only: /.*/
+            - lint:
+                  requires:
+                      - install
+                  filters:
+                      tags:
+                          only: /.*/
             - build:
+                  requires:
+                      - lint
                   filters:
                       tags:
                           only: /.*/
