@@ -63,19 +63,19 @@ workflows:
     version: 2
     build_and_test:
         jobs:
-            - lint:
+            - build:
                   filters:
                       tags:
                           only: /.*/
-            - build:
+            - lint:
                   requires:
-                      - lint
+                      - build
                   filters:
                       tags:
                           only: /.*/
             - test:
                   requires:
-                      - build
+                      - lint
                   filters:
                       tags:
                           only: /.*/
