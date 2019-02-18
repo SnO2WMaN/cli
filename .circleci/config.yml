@@ -1,10 +1,13 @@
 version: 2
 
+defaults: &defaults
+    working_directory: ~/workspace
+    docker:
+        - image: circleci/node:8.11.4
+
 jobs:
     build:
-        working_directory: ~/workspace
-        docker:
-            - image: circleci/node:8.11.4
+        <<: *defaults
         steps:
             - checkout
             - restore_cache:
@@ -24,16 +27,24 @@ jobs:
                   paths:
                       - .
     test:
-        working_directory: ~/workspace
-        docker:
-            - image: circleci/node:8.11.4
+        <<: *defaults
         steps:
             - attach_workspace:
                   at: .
             - run:
                   name: Test
                   command: yarn test
-
+    release:
+        <<: *defaults
+        steps:
+            - attach_workspace:
+                  at: .
+            - run:
+                  name: Authenticate with registry
+                  command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc
+            - run:
+                  name: Publish package
+                  command: npm publish
 workflows:
     version: 2
     build_and_test:
