@@ -51,9 +51,8 @@
 	},
 	"scripts": {
 		"lint": "eslint **/*.js --ignore-path .gitignore",
-		"build": "pack build",
-		"pretest": "npm run build",
-		"test": "ava"
+		"test": "ava",
+		"build": "pack build"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.3.3",
