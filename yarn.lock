@@ -2273,10 +2273,11 @@ eslint-config-airbnb-base@^13.1.0:
     object.entries "^1.0.4"
 
 eslint-config-cold@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-cold/-/eslint-config-cold-1.1.2.tgz#1cedf90484a61d799f47cfd69c8b5822eed4cbba"
-  integrity sha512-xHHPZJ29hI0iOF+PZFKhnkXoNl8iROfw1isvT6L7Mtc7Q7CDykWvEomQeYyS56fbpNN/R5bqZC7ZI8j76HWaYQ==
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-cold/-/eslint-config-cold-1.1.3.tgz#529e7953a3402bc86ac5fca17d773cae7e89f197"
+  integrity sha512-cTTkepMFN3acb5DIRzZ69JKWSBrjxfyASBL11az9klVXgaaIhg0djcLOAp7vYWbO4cqY/x5M90F7TvvbYlHcrw==
   dependencies:
+    "@babel/core" "^7.3.3"
     babel-eslint "^10.0.1"
     babel-plugin-module-resolver "^3.2.0"
     eslint-config-airbnb-base "^13.1.0"
