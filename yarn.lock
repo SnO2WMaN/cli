@@ -893,7 +893,7 @@
     rollup "^1.1.0"
     rollup-plugin-babel "^4.3.0"
 
-"@pika/plugin-build-types@^0.3.11":
+"@pika/plugin-build-types@^0.3.12":
   version "0.3.12"
   resolved "https://registry.yarnpkg.com/@pika/plugin-build-types/-/plugin-build-types-0.3.12.tgz#1eb70d80f5579df4a540302ed6dbee51b17f62f8"
   integrity sha512-XIF/qu8kuerMqaOA99ZgxSBiXvpKQUCsVvfTEZ2EHo5gN8X+hUtn0cBusIogTatYmqwgY3F/vGp/BUwX7kdRIQ==
