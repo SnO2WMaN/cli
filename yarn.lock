@@ -3808,10 +3808,10 @@ lint-staged@^8.1.4:
     stringify-object "^3.2.2"
     yup "^0.26.10"
 
-linter-gitignore@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/linter-gitignore/-/linter-gitignore-1.1.1.tgz#31abbbe804d7ff36c6ac692433d413debcacfe76"
-  integrity sha512-EusC/Wfa3QFFNS5IhSyrsnxRB9Aa8qAPpDmDpYQ2Oj1gt01A20WGnsKprwoO2aq11h7wyxLqLoZbQp6+v0JWKw==
+linter-gitignore@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/linter-gitignore/-/linter-gitignore-1.2.0.tgz#6fc3e87cf1fd06999c72ac54786089b5cd2e1cd8"
+  integrity sha512-X1isOcvREvy5Gf9vqwizSCAPJ24/GyIW0PaAZpupY5hiuW3m9nL1sX5/Mlbq5FHWurCTh8xmoGvyIQ7BLxVokg==
   dependencies:
     cac "^6.4.2"
     file-exists "^5.0.1"
