@@ -32,13 +32,13 @@ jobs:
             - attach_workspace:
                   at: .
             - run:
-                  name: 'Commitlint'
+                  name: "Commitlint"
                   command: |
                       git log --format=%B -n 1 $CIRCLE_SHA1 > $HOME/message.txt
                       yarn commitlint -e $HOME/message.txt
             - run:
-                  name: 'ESLint'
-                  command: yarn run lint:eslint
+                  name: "ESLint"
+                  command: yarn run lint
     test:
         <<: *defaults
         steps:

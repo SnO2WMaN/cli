@@ -1466,6 +1466,11 @@ builtin-modules@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.0.0.tgz#1e587d44b006620d90286cc7a9238bbc6129cab1"
   integrity sha512-hMIeU4K2ilbXV6Uv93ZZ0Avg/M91RaKXucQ+4me2Do1txxBDyDZWCBa5bJSLqoNTRpXTLwEzIk1KmloenDDjhg==
 
+cac@^6.4.2:
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/cac/-/cac-6.4.2.tgz#6b2a2ab12619b778b3acc19f97e5298761d9c3de"
+  integrity sha512-HM7kl/Izk6pb2HD7z66LVNU52j0xWpBXg8J2MLnOdRMUo2wsrcxu3yRnubnDe/cT0btDzSOl3FPhze09uaT1Vw==
+
 cache-base@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cache-base/-/cache-base-1.0.1.tgz#0a7f46416831c8b662ee36fe4e7c59d76f666ab2"
@@ -2681,6 +2686,11 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
+file-exists@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/file-exists/-/file-exists-5.0.1.tgz#1dcd017f787fc7be7a09a6ef3e6a3550cea31198"
+  integrity sha512-TeBMgeKbdSsQtcY2XqKY/yTa4BciMD/Gw8YcND0XMDZt4CDj87l1Wl4x7K0ravZ80tZcyIGMD0hj2VSRPR8M8Q==
+
 file-uri-to-path@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
@@ -3797,6 +3807,14 @@ lint-staged@^8.1.4:
     string-argv "^0.0.2"
     stringify-object "^3.2.2"
     yup "^0.26.10"
+
+linter-gitignore@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/linter-gitignore/-/linter-gitignore-1.1.1.tgz#31abbbe804d7ff36c6ac692433d413debcacfe76"
+  integrity sha512-EusC/Wfa3QFFNS5IhSyrsnxRB9Aa8qAPpDmDpYQ2Oj1gt01A20WGnsKprwoO2aq11h7wyxLqLoZbQp6+v0JWKw==
+  dependencies:
+    cac "^6.4.2"
+    file-exists "^5.0.1"
 
 listr-silent-renderer@^1.1.1:
   version "1.1.1"
