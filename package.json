@@ -63,7 +63,7 @@
 		"@pika/pack": "^0.3.2",
 		"@pika/plugin-build-node": "^0.3.11",
 		"@pika/plugin-build-types": "^0.3.11",
-		"@pika/plugin-build-web": "^0.3.11",
+		"@pika/plugin-build-web": "^0.3.12",
 		"@pika/plugin-standard-pkg": "^0.3.11",
 		"all-contributors-cli": "^6.1.2",
 		"ava": "^1.2.1",
