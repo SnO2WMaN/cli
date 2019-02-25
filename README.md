@@ -1,7 +1,7 @@
 # SnO2WMaN
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/SnO2WMaN/SnO2WMaN.svg?branch=master)](https://travis-ci.org/SnO2WMaN/SnO2WMaN)
+[![CircleCI](https://circleci.com/gh/SnO2WMaN/SnO2WMaN.svg?style=svg)](https://circleci.com/gh/SnO2WMaN/SnO2WMaN)
 [![npm version](https://badge.fury.io/js/sno2wman.svg)](https://www.npmjs.com/package/sno2wman)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
