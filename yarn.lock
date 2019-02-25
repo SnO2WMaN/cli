@@ -917,7 +917,7 @@
     rollup "^1.1.0"
     rollup-plugin-babel "^4.3.0"
 
-"@pika/plugin-standard-pkg@^0.3.11":
+"@pika/plugin-standard-pkg@^0.3.12":
   version "0.3.12"
   resolved "https://registry.yarnpkg.com/@pika/plugin-standard-pkg/-/plugin-standard-pkg-0.3.12.tgz#40dff6ce83a6bcbf0892956d15411746992d4b2d"
   integrity sha512-QAV8onVIddqShfkJSMhwCFShe3AOZ2dPpDJlq0Hg62D/u6E4gSydrvOqXYH0ucfxGCLC+z3ur6kfpdlZgO530g==
