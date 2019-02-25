@@ -8,5 +8,11 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
+[.nvmrc]
+insert_final_newline = false
+
+[.*ignore]
+insert_final_newline = false
+
 [*.yml]
 indent_style = space

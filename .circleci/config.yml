@@ -3,7 +3,7 @@ version: 2
 defaults: &defaults
     working_directory: ~/repo
     docker:
-        - image: circleci/node:8.11.4
+        - image: circleci/node:lts
 
 jobs:
     build:
@@ -32,12 +32,12 @@ jobs:
             - attach_workspace:
                   at: .
             - run:
-                  name: "Commitlint"
+                  name: Commitlint
                   command: |
                       git log --format=%B -n 1 $CIRCLE_SHA1 > $HOME/message.txt
                       yarn commitlint -e $HOME/message.txt
             - run:
-                  name: "ESLint"
+                  name: ESLint
                   command: yarn run lint
     test:
         <<: *defaults
