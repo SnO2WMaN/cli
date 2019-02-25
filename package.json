@@ -60,7 +60,7 @@
 		"@babel/preset-env": "^7.3.1",
 		"@commitlint/cli": "^7.5.2",
 		"@commitlint/config-conventional": "^7.5.0",
-		"@pika/pack": "^0.3.2",
+		"@pika/pack": "^0.3.3",
 		"@pika/plugin-build-node": "^0.3.12",
 		"@pika/plugin-build-types": "^0.3.11",
 		"@pika/plugin-build-web": "^0.3.12",
