@@ -2277,7 +2277,7 @@ eslint-config-airbnb-base@^13.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-cold@^1.1.2:
+eslint-config-cold@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/eslint-config-cold/-/eslint-config-cold-1.1.3.tgz#529e7953a3402bc86ac5fca17d773cae7e89f197"
   integrity sha512-cTTkepMFN3acb5DIRzZ69JKWSBrjxfyASBL11az9klVXgaaIhg0djcLOAp7vYWbO4cqY/x5M90F7TvvbYlHcrw==
