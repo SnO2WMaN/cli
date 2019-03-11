@@ -44,7 +44,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@^7.0.0", "@babel/core@^7.2.2", "@babel/core@^7.3.3", "@babel/core@^7.3.4":
+"@babel/core@^7.0.0", "@babel/core@^7.2.2", "@babel/core@^7.3.4":
   version "7.3.4"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.3.4.tgz#921a5a13746c21e32445bf0798680e9d11a6530b"
   integrity sha512-jRsuseXBo9pN197KnDwhhaaBzyZr2oIcLHHTt2oDdQrej5Qp57dCCJafWx5ivU8/alEYDpssYqv1MUqcxwQlrA==
@@ -2275,16 +2275,16 @@ eslint-config-airbnb-base@^13.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
-eslint-config-cold@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-cold/-/eslint-config-cold-1.1.3.tgz#529e7953a3402bc86ac5fca17d773cae7e89f197"
-  integrity sha512-cTTkepMFN3acb5DIRzZ69JKWSBrjxfyASBL11az9klVXgaaIhg0djcLOAp7vYWbO4cqY/x5M90F7TvvbYlHcrw==
+eslint-config-cold@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/eslint-config-cold/-/eslint-config-cold-1.1.4.tgz#2d22c2f2c6991df3310f94516e425da7de4eded5"
+  integrity sha512-hiOO9bX9lL1KP34Vk0php6dEktwTW7GNh1mlaUwfTKo5jipv4ntrKNG8vxHN3CLXhtiDRcF0Ro9DEmTqOb4uDA==
   dependencies:
-    "@babel/core" "^7.3.3"
+    "@babel/core" "^7.3.4"
     babel-eslint "^10.0.1"
     babel-plugin-module-resolver "^3.2.0"
     eslint-config-airbnb-base "^13.1.0"
-    eslint-config-prettier "^4.0.0"
+    eslint-config-prettier "^4.1.0"
     eslint-import-resolver-babel-module "^5.0.1"
     eslint-plugin-ava "^5.1.1"
     eslint-plugin-flowtype "^3.4.2"
@@ -2294,7 +2294,7 @@ eslint-config-cold@^1.1.3:
     eslint-plugin-prettier "^3.0.1"
     eslint-plugin-vue "^5.2.2"
 
-eslint-config-prettier@^4.0.0:
+eslint-config-prettier@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-4.1.0.tgz#181364895899fff9fd3605fecb5c4f20e7d5f395"
   integrity sha512-zILwX9/Ocz4SV2vX7ox85AsrAgXV3f2o2gpIicdMIOra48WYqgUnWNH/cR/iHtmD2Vb3dLSC3LiEJnS05Gkw7w==
@@ -2475,11 +2475,11 @@ eslint@^5.15.1:
     table "^5.2.3"
     text-table "^0.2.0"
 
-esm@^3.0.82, esm@^3.1.3:
+esm@^3.0.82:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.7.tgz#5fcb7649cce55323bce9ac02496e89339df86f9f"
   integrity sha512-zsyD5gO8CY9dpK3IrdC4WHtvtHGXEFOpYA4zB+6p+Kygf3vv/6kF3YMEQLOArwKPPNvKt8gjI8UYhQW8bXM/YQ==
-  
+
 esm@^3.2.10:
   version "3.2.11"
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.11.tgz#f6ac0c7fbb682324e80f48950130f5a5fe953f35"
