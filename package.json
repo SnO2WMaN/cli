@@ -70,7 +70,7 @@
 		"axios": "^0.18.0",
 		"babel-eslint": "^10.0.1",
 		"cross-env": "^5.2.0",
-		"eslint": "^5.15.1",
+		"eslint": "^5.15.2",
 		"eslint-config-cold": "^1.1.5",
 		"husky": "^1.3.1",
 		"lint-staged": "^8.1.5",
