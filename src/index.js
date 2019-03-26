@@ -1,26 +1,21 @@
 import gravatar from 'gravatar'
 import ager from 'ager'
 
-import socials from './socials'
-import wishlist from './wishlist'
+import socials from './data/socials'
+import wishlist from './data/wishlist'
+/**
+ * @param {gravatar.Options} option
+ */
+const icon = (option = {}) => gravatar.url(socials.email, option)
 
-const name = 'SnO2WMaN'
 const birthday = new Date(2001, 5, 22)
-const age = ager(birthday)
-const sex = 1
-const religion = 'Pastafarianism'
-const location = 'Japan, Nagoya'
-const icon = (option = {}) => {
-	return gravatar.url(socials.email, option)
-}
+
 export default {
-	name,
+	name: 'SnO2WMaN',
+	sex: 1,
 	icon,
-	birthday,
-	age,
 	socials,
-	sex,
-	religion,
-	location,
-	wishlist
+	wishlist,
+	birthday,
+	age: ager(birthday)
 }
