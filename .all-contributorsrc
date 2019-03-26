@@ -1,24 +1,19 @@
 {
-  "projectName": "SnO2WMaN",
-  "projectOwner": "SnO2WMaN",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
-  "commit": false,
-  "contributors": [
-    {
-      "login": "SnO2WMaN",
-      "name": "SnO₂WMaN",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/15155608?v=4",
-      "profile": "https://sno2wman.graphics/",
-      "contributions": [
-        "doc",
-        "code"
-      ]
-    }
-  ],
-  "contributorsPerLine": 7
+	"projectName": "SnO2WMaN",
+	"projectOwner": "SnO2WMaN",
+	"repoType": "github",
+	"repoHost": "https://github.com",
+	"files": ["README.md"],
+	"imageSize": 100,
+	"commit": false,
+	"contributors": [
+		{
+			"login": "SnO2WMaN",
+			"name": "SnO₂WMaN",
+			"avatar_url": "https://avatars3.githubusercontent.com/u/15155608?v=4",
+			"profile": "https://sno2wman.graphics/",
+			"contributions": ["doc", "code"]
+		}
+	],
+	"contributorsPerLine": 7
 }
