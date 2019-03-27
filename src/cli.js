@@ -80,9 +80,9 @@ class CLI extends Component {
 								{
 									key: 'birthday',
 									value: (date =>
-										`${date.getFullYear()}/${
-											date.getMonth
-										}/${date.getDate()}`)(sno2wman.birthday)
+										`${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`)(
+										sno2wman.birthday
+									)
 								},
 								{ key: 'religion', value: sno2wman.religion }
 							].map(({ key, value }) => (
