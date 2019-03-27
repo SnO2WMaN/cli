@@ -1,4 +1,5 @@
-import dateFormat from 'dateformat'
+#!/usr/bin/env node
+
 import capitalize from 'lodash.capitalize'
 import open from 'open'
 
@@ -78,10 +79,10 @@ class CLI extends Component {
 								{ key: 'age', value: sno2wman.age },
 								{
 									key: 'birthday',
-									value: dateFormat(
-										sno2wman.birthday,
-										'yyyy/mm/dd'
-									)
+									value: (date =>
+										`${date.getFullYear()}/${
+											date.getMonth
+										}/${date.getDate()}`)(sno2wman.birthday)
 								},
 								{ key: 'religion', value: sno2wman.religion }
 							].map(({ key, value }) => (
