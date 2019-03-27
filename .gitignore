@@ -1,5 +1,4 @@
 node_modules
-.cache
+lib
+
 *.log
-coverage
-pkg
