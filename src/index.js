@@ -3,6 +3,7 @@ import ager from 'ager'
 
 import socials from './data/socials'
 import wishlist from './data/wishlist'
+
 /**
  * @param {gravatar.Options} option
  */
@@ -15,6 +16,8 @@ export default {
 	sex: 1,
 	icon,
 	socials,
+	locale: 'ja_JP',
+	religion: 'FSMism',
 	wishlist,
 	birthday,
 	age: ager(birthday)
