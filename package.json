@@ -44,7 +44,7 @@
 		"commit": "git-cz",
 		"build": "babel src --out-dir lib --copy-files",
 		"prerelease": "yarn run build",
-		"release": "np"
+		"release": "np --yolo"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.2.3",
