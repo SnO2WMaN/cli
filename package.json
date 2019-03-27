@@ -45,6 +45,7 @@
 		"build": "babel src --out-dir lib --copy-files"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.2.3",
 		"@babel/core": "^7.4.0",
 		"@babel/preset-env": "^7.4.2",
 		"@babel/preset-react": "^7.0.0",
@@ -61,10 +62,18 @@
 		"prettier": "^1.16.4"
 	},
 	"dependencies": {
-		"@babel/cli": "^7.2.3",
 		"ager": "^2.0.5",
+		"dateformat": "^3.0.3",
 		"gravatar": "^1.8.0",
 		"ink": "^2.0.6",
+		"ink-big-text": "^1.0.1",
+		"ink-box": "^1.0.0",
+		"ink-gradient": "^1.0.0",
+		"ink-select-input": "^3.1.0",
+		"ink-spinner": "^3.0.0",
+		"ink-text-animation": "^0.1.0",
+		"lodash.capitalize": "^4.2.1",
+		"open": "^6.0.0",
 		"react": "^16.8.5",
 		"request": "^2.88.0",
 		"terminal-image": "^0.1.2"
