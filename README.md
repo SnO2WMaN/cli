@@ -7,6 +7,12 @@
 
 > Detail of SnO2WMaN
 
+## CLI
+
+```
+npx sno2wman
+```
+
 ## Contributors
 
 Thanks goes to these wonderful people ([emoji key](https://github.com/all-contributors/all-contributors#emoji-key)):
