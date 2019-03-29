@@ -74,6 +74,6 @@
 		"ink-spinner": "^3.0.0",
 		"lodash.capitalize": "^4.2.1",
 		"open": "^6.0.0",
-		"react": "^16.8.5"
+		"react": "^16.8.6"
 	}
 }
