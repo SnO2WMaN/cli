@@ -3141,7 +3141,7 @@ ink-spinner@^3.0.1:
     cli-spinners "^1.0.0"
     prop-types "^15.5.10"
 
-ink@^2.0.6:
+ink@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ink/-/ink-2.1.1.tgz#efb2adbd30be79b4f640d7c67b524bfb030205ba"
   integrity sha512-vP1yE/uJoiY6uB9yHalczUA02I9fg7xDUbTEZitPK5y6dvnPo9a/6UWqIB2uCYkHOhEZMN+D/TsVr4v2sz8qYA==
