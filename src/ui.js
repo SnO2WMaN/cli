@@ -34,7 +34,7 @@ const popups = [
 const links = {
   "sno2wman.dev": { icon: "📜", link: "https://sno2wman.dev/" },
   "Twitter": { icon: "🐦", link: "https://twitter.com/SnO2WMaN" },
-  "Github": { icon: "💻", link: "https://github.com/SnO2WMaN" },
+  "GitHub": { icon: "💻", link: "https://github.com/SnO2WMaN" },
   "Qiita": { icon: "📝", link: "https://qiita.com/SnO2WMaN" },
   "Ko-fi": { icon: "☕️", link: "https://ko-fi.com/sno2wman" },
   "Speaker Deck": { icon: "📢", link: "https://speakerdeck.com/sno2wman" },
