@@ -28,9 +28,7 @@
     "lintfix": "run-s -cnsl lintfix:*",
     "lint:prettier": "prettier --check **/*.{js,jsx,ts,tsx,json,yml,html,md,mdx,css,scss,sass}",
     "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lintfix:eslint": "npm run lint:eslint -- --fix",
-    "postinstall": "run-s -cnsl postinstall:*",
-    "postinstall:lefthook": "lefthook install"
+    "lintfix:eslint": "npm run lint:eslint -- --fix"
   },
   "dependencies": {
     "ager": "^2.0.5",
