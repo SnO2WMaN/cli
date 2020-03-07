@@ -1,14 +1,15 @@
 {
   "name": "@sno2wman/cli",
   "version": "1.0.0-1",
+  "description": "About SnO2WMaN",
   "repository": "https://github.com/SnO2WMaN/SnO2WMaN",
   "homepage": "https://github.com/SnO2WMaN/SnO2WMaN#readme",
-  "main": "src/cli.js",
+  "main": "lib/cli.js",
   "bin": {
-    "sno2wman": "src/cli.js"
+    "sno2wman": "lib/cli.js"
   },
   "files": [
-    "src"
+    "lib"
   ],
   "publishConfig": {
     "access": "public"
