@@ -1,0 +1,52 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "eslint-config-airbnb-base",
+    // plugin
+    "plugin:react/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "plugin:import/recommended",
+    // prettier
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "class-methods-use-this": 0,
+    "sort-imports": 0,
+    // prettier
+    "prettier/prettier": 2,
+    // react
+    "react/self-closing-comp": [2],
+    // import
+    "import/order": [
+      2,
+      {
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "import/first": 2,
+    "import/extensions": [
+      2,
+      {
+        "json": "always",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  }
+}
