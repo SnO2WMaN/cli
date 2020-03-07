@@ -1,0 +1,45 @@
+{
+  "extends": [
+    ":label(renovate)",
+    ":ignoreModulesAndTests",
+    ":prImmediately",
+    ":prConcurrentLimitNone",
+    ":semanticCommitsDisabled",
+    ":separateMajorReleases",
+    ":separatePatchReleases",
+    ":automergePatch",
+    "group:monorepos",
+    "group:recommended",
+    "helpers:disableTypesNodeMajor",
+    ":timezone(Asia/Tokyo)",
+    "schedule:daily"
+  ],
+  "baseBranches": ["dev"],
+  "commitMessage": "{{commitMessagePrefix}} {{commitMessageTopic}}を{{commitMessageExtra}}に{{commitMessageAction}}",
+  "commitMessagePrefix": "⬆️",
+  "commitMessageAction": "更新",
+  "commitMessageTopic": "`{{depName}}`",
+  "commitMessageExtra": "{{#if isMajor}}v{{{newMajor}}}{{else}}{{#if isSingleVersion}}v{{{toVersion}}}{{else}}{{{newValue}}}{{/if}}{{/if}}",
+  "packageRules": [
+    {
+      "updateTypes": ["pin"],
+      "commitMessagePrefix": "📌",
+      "commitMessageAction": "固定"
+    },
+    {
+      "updateTypes": ["rollback"],
+      "commitMessagePrefix": "⬇️",
+      "commitMessageAction": "戻す"
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "extends": ["schedule:weekly"],
+    "commitMessagePrefix": "👷",
+    "commitMessage": "{{commitMessagePrefix}} `.lock`ファイルを最新に維持"
+  },
+  "npm": {
+    "extends": [":automergeTypes"],
+    "postUpdateOptions": ["yarnDedupeHighest"]
+  }
+}
