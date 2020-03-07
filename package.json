@@ -25,6 +25,7 @@
   "scripts": {
     "dev": "babel-node src/cli.js",
     "build": "rollup -c",
+    "prepack": "npm run build",
     "postversion": "npm pack --dry-run",
     "fmt": "npm run lint:prettier -- --write",
     "lint": "run-s -cnsl lint:*",
