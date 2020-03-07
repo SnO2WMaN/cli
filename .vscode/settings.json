@@ -1,0 +1,21 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "files.associations": {
+    ".eslintrc": "jsonc",
+    ".stylelintrc": "jsonc",
+    ".prettierrc": "jsonc",
+    ".babelrc": "jsonc"
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "prettier.disableLanguages": ["javascript", "typescript"],
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  }
+}
