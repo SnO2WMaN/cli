@@ -22,7 +22,9 @@
   },
   "license": "MIT",
   "scripts": {
-    "dev": "node src/cli.js",
+    "dev": "babel-node src/cli.js",
+    "build": "rollup -c",
+    "postversion": "npm pack --dry-run",
     "fmt": "npm run lint:prettier -- --write",
     "lint": "run-s -cnsl lint:*",
     "lintfix": "run-s -cnsl lintfix:*",
