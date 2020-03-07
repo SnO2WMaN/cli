@@ -1,6 +1,6 @@
 {
   "name": "@sno2wman/cli",
-  "version": "1.0.0-0",
+  "version": "1.0.0-1",
   "repository": "https://github.com/SnO2WMaN/SnO2WMaN",
   "homepage": "https://github.com/SnO2WMaN/SnO2WMaN#readme",
   "main": "src/cli.js",
