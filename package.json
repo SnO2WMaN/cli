@@ -15,6 +15,17 @@
     "email": "sno2wman.official@gmail.com"
   },
   "license": "MIT",
+  "scripts": {
+    "dev": "node src/cli.js",
+    "fmt": "npm run lint:prettier -- --write",
+    "lint": "run-s -cnsl lint:*",
+    "lintfix": "run-s -cnsl lintfix:*",
+    "lint:prettier": "prettier --check **/*.{js,jsx,ts,tsx,json,yml,html,md,mdx,css,scss,sass}",
+    "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lintfix:eslint": "npm run lint:eslint -- --fix",
+    "postinstall": "run-s -cnsl postinstall:*",
+    "postinstall:lefthook": "lefthook install"
+  },
   "dependencies": {
     "ager": "^2.0.5",
     "chalk": "^3.0.0",
