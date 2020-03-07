@@ -7,6 +7,9 @@
   "bin": {
     "sno2wman": "src/cli.js"
   },
+  "files": [
+    "src"
+  ],
   "publishConfig": {
     "access": "public"
   },
