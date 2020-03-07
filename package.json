@@ -33,7 +33,6 @@
   "dependencies": {
     "ager": "^2.0.5",
     "chalk": "^3.0.0",
-    "import-jsx": "^3.1.0",
     "ink": "^2.7.1",
     "ink-gradient": "^1.0.0",
     "ink-select-input": "^3.1.2",
